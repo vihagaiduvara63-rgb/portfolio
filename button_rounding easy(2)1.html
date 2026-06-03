@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iduwara Pallegedara Photography | Wedding & Cinematic Films</title>
+  <meta name="description" content="Luxury wedding photography and cinematic films in Sri Lanka. Timeless storytelling through light and emotion.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    :root { --cream:#f5f0eb; --warm-white:#faf8f5; --soft-gold:#c4a882; --dusty-rose:#b8907a; --charcoal:#2c2826; --warm-gray:#6b6560; --light-gray:#e8e3dd; --deep-gold:#a08050; --transition:cubic-bezier(0.25,0.1,0.25,1); }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:70px}
+    body{font-family:'Inter',sans-serif;background:var(--warm-white);color:var(--charcoal);overflow-x:hidden;line-height:1.8;font-weight:400;-webkit-font-smoothing:antialiased}
+    img{width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    ::selection{background:var(--soft-gold);color:#fff}
+    ::-webkit-scrollbar{width:6px}
+    ::-webkit-scrollbar-track{background:var(--cream)}
+    ::-webkit-scrollbar-thumb{background:var(--soft-gold);border-radius:3px}
+    h1,h2,h3,h4{font-family:'Cormorant Garamond',serif;font-weight:400;letter-spacing:0.02em}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    @keyframes glowPulse{0%,100%{box-shadow:0 0 20px rgba(196,168,130,0.2)}50%{box-shadow:0 0 40px rgba(196,168,130,0.4)}}
+    @keyframes orbit{0%{transform:rotate(0deg) translateX(80px) rotate(0deg)}100%{transform:rotate(360deg) translateX(80px) rotate(-360deg)}}
+    @keyframes orbitReverse{0%{transform:rotate(0deg) translateX(60px) rotate(0deg)}100%{transform:rotate(-360deg) translateX(60px) rotate(360deg)}}
+    @keyframes letterSpacing{0%{letter-spacing:2px}50%{letter-spacing:6px}100%{letter-spacing:2px}}
+    @keyframes borderGlow{0%,100%{border-color:rgba(196,168,130,0.2)}50%{border-color:rgba(196,168,130,0.6)}}
+    @keyframes ripple{0%{transform:scale(1);opacity:1}100%{transform:scale(2.5);opacity:0}}
+    .fade-up{opacity:0;transform:translateY(24px);transition:opacity 0.9s var(--transition),transform 0.9s var(--transition)}
+    .fade-up.visible{opacity:1;transform:translateY(0)}
+    .delay-1{transition-delay:0.15s}
+    .delay-2{transition-delay:0.3s}
+    .delay-3{transition-delay:0.45s}
+    header{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:22px 5%;display:flex;justify-content:space-between;align-items:center;background:rgba(250,248,245,0.92);backdrop-filter:blur(20px) saturate(150%);transition:all 0.5s var(--transition);border-bottom:1px solid transparent}
+    header.scrolled{padding:14px 5%;background:rgba(250,248,245,0.98);border-bottom:1px solid var(--light-gray);box-shadow:0 2px 24px rgba(44,40,38,0.06)}
+    .logo{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;letter-spacing:3px;color:var(--charcoal);text-transform:uppercase;position:relative}
+    .logo::after{content:'';position:absolute;bottom:-6px;left:0;width:0;height:2px;background:var(--soft-gold);transition:width 0.5s var(--transition)}
+    header.scrolled .logo::after{width:48px}
+    .logo span{font-weight:300;font-style:italic;text-transform:none;letter-spacing:1px;color:var(--soft-gold)}
+    nav{display:flex;gap:36px}
+    nav a{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--warm-gray);font-weight:500;position:relative;padding-bottom:6px;transition:color 0.4s;padding:6px 12px;border-radius:50px}
+    nav a:hover{background:rgba(196,168,130,0.08)}
+    nav a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--soft-gold);transition:width 0.4s var(--transition)}
+    nav a:hover{color:var(--charcoal)}
+    nav a:hover::after{width:100%}
+    .menu-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:10px;z-index:1001;border-radius:8px}
+    .menu-toggle span{display:block;width:24px;height:2px;background:var(--charcoal);transition:all 0.4s}
+    .menu-toggle.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+    .menu-toggle.active span:nth-child(2){opacity:0}
+    .menu-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(6px,-6px)}
+    .mobile-overlay{position:fixed;inset:0;z-index:999;background:var(--warm-white);opacity:0;pointer-events:none;transition:opacity 0.5s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:36px}
+    .mobile-overlay.active{opacity:1;pointer-events:all}
+    .mobile-overlay a{font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--charcoal);font-weight:500;letter-spacing:2px;transition:color 0.3s;padding:8px 24px;border-radius:50px}
+    .mobile-overlay a:hover{color:var(--soft-gold)}
+    .hero{height:100vh;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 3s ease,transform 12s ease;transform:scale(1.08)}
+    .hero-bg.active{opacity:1;transform:scale(1)}
+    .hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(44,40,38,0.3) 0%,rgba(44,40,38,0.5) 50%,rgba(44,40,38,0.75) 100%)}
+    .hero-inner{position:relative;z-index:2;text-align:center;max-width:850px;padding:0 24px}
+    .hero-inner .subtitle{font-size:12px;letter-spacing:6px;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:32px;animation:fadeUp 1.2s ease 0.5s both;position:relative;display:inline-block;font-weight:500;background:rgba(196,168,130,0.15);padding:8px 24px;border:1px solid rgba(196,168,130,0.3)}
+    .hero-inner h1{font-size:clamp(40px,7vw,80px);color:#fff;font-weight:400;line-height:1.05;margin-bottom:28px;animation:fadeUp 1.2s ease 0.8s both;letter-spacing:2px;text-shadow:0 2px 20px rgba(0,0,0,0.2)}
+    .hero-inner h1 em{font-style:italic;font-weight:500;color:var(--soft-gold);display:block;margin-top:12px;font-size:0.85em;text-shadow:0 2px 10px rgba(196,168,130,0.3)}
+    .hero-inner p{font-size:17px;color:rgba(255,255,255,0.9);font-weight:400;letter-spacing:1px;margin-bottom:48px;animation:fadeUp 1.2s ease 1.1s both;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.7}
+    .hero-buttons{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;animation:fadeUp 1.2s ease 1.4s both}
+    .hero-btn{display:inline-flex;align-items:center;gap:12px;padding:18px 40px;font-size:13px;letter-spacing:3px;text-transform:uppercase;font-weight:500;transition:all 0.5s var(--transition);cursor:pointer;position:relative;overflow:hidden;border-radius:50px}
+    .hero-btn-primary{background:var(--soft-gold);color:#fff;border:2px solid var(--soft-gold);box-shadow:0 8px 32px rgba(196,168,130,0.35)}
+    .hero-btn-primary:hover{background:transparent;color:var(--soft-gold);transform:translateY(-3px);box-shadow:0 12px 40px rgba(196,168,130,0.25)}
+    .hero-btn-secondary{background:rgba(255,255,255,0.12);color:#fff;border:2px solid rgba(255,255,255,0.4);backdrop-filter:blur(10px)}
+    .hero-btn-secondary:hover{background:rgba(255,255,255,0.25);border-color:rgba(255,255,255,0.7);transform:translateY(-3px)}
+    .hero-btn i{font-size:13px;transition:transform 0.3s}
+    .hero-btn:hover i{transform:translateX(4px)}
+    .hero-scroll{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:2;animation:fadeIn 1s ease 2s both;text-align:center}
+    .hero-scroll .mouse{width:26px;height:42px;border:2px solid rgba(255,255,255,0.4);border-radius:13px;margin:0 auto 10px;position:relative}
+    .hero-scroll .mouse::before{content:'';position:absolute;top:10px;left:50%;transform:translateX(-50%);width:4px;height:8px;background:var(--soft-gold);border-radius:2px;animation:float 2s ease-in-out infinite}
+    .hero-scroll p{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,0.6);font-weight:500}
+    section{padding:100px 5%;position:relative}
+    .section-head{text-align:center;margin-bottom:64px}
+    .section-head .label{font-size:12px;letter-spacing:5px;text-transform:uppercase;color:var(--soft-gold);margin-bottom:16px;display:block;font-weight:600;background:rgba(196,168,130,0.08);padding:6px 20px;display:inline-block;border:1px solid rgba(196,168,130,0.2)}
+    .section-head h2{font-size:clamp(32px,4vw,48px);color:var(--charcoal);font-weight:500;margin-bottom:20px;letter-spacing:1px}
+    .section-head .deco-line{width:60px;height:3px;background:var(--soft-gold);margin:0 auto 24px;border-radius:2px}
+    .section-head p{color:var(--warm-gray);font-size:16px;max-width:560px;margin:0 auto;line-height:1.9;font-weight:400}
+    .about-wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;max-width:1200px;margin:0 auto}
+    .about-img{position:relative;overflow:hidden;box-shadow:0 20px 60px rgba(44,40,38,0.12);border-radius:16px}
+    .about-img img{aspect-ratio:3/4;object-fit:cover;transition:transform 1.2s var(--transition);border-radius:16px}
+    .about-img:hover img{transform:scale(1.05)}
+    .about-img::before{content:'';position:absolute;inset:-16px;border:2px solid var(--soft-gold);z-index:-1;opacity:0.4;transition:all 0.6s var(--transition)}
+    .about-img:hover::before{inset:-20px;opacity:0.7}
+    .about-text h3{font-size:clamp(28px,3vw,40px);margin-bottom:24px;line-height:1.2;font-weight:500;letter-spacing:1px}
+    .about-text h3 em{font-style:italic;color:var(--soft-gold);font-weight:600}
+    .about-text p{color:var(--warm-gray);font-size:16px;margin-bottom:20px;line-height:1.9;font-weight:400}
+    .about-text .signature{margin-top:32px;font-family:'Cormorant Garamond',serif;font-size:24px;font-style:italic;color:var(--soft-gold);font-weight:500}
+    .about-stats{display:flex;gap:48px;margin-top:40px;padding-top:32px;border-top:2px solid var(--light-gray)}
+    .stat-item h4{font-size:40px;color:var(--soft-gold);font-family:'Cormorant Garamond',serif;font-weight:600;line-height:1;margin-bottom:8px}
+    .stat-item p{font-size:12px;color:var(--warm-gray);text-transform:uppercase;letter-spacing:2px;margin:0;font-weight:500}
+    #portfolio{background:var(--cream);position:relative}
+    #portfolio::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--soft-gold),transparent)}
+    .filters{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:48px}
+    .filter-pill{padding:12px 32px;background:#fff;color:var(--warm-gray);font-family:'Inter',sans-serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:all 0.4s;font-weight:500;border:2px solid transparent;box-shadow:0 2px 12px rgba(44,40,38,0.04);border-radius:50px}
+    .filter-pill:hover{color:var(--charcoal);border-color:var(--light-gray);transform:translateY(-2px);box-shadow:0 6px 20px rgba(44,40,38,0.08)}
+    .filter-pill.active{background:var(--soft-gold);color:#fff;border-color:var(--soft-gold);box-shadow:0 6px 24px rgba(196,168,130,0.3)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;max-width:1300px;margin:0 auto}
+    .gallery-cell{position:relative;overflow:hidden;cursor:pointer;box-shadow:0 4px 16px rgba(44,40,38,0.08);transition:box-shadow 0.4s;border-radius:12px}
+    .gallery-cell:hover{box-shadow:0 12px 32px rgba(44,40,38,0.15)}
+    .gallery-cell:nth-child(1){grid-row:span 2}
+    .gallery-cell:nth-child(4){grid-row:span 2}
+    .gallery-cell img{aspect-ratio:3/4;object-fit:cover;transition:transform 1s var(--transition),filter 0.6s;height:100%;border-radius:12px}
+    .gallery-cell:nth-child(1) img,.gallery-cell:nth-child(4) img{aspect-ratio:auto}
+    .gallery-cell:hover img{transform:scale(1.06);filter:brightness(0.75)}
+    .gallery-cell .overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(44,40,38,0.9) 0%,rgba(44,40,38,0.3) 50%,transparent 100%);opacity:0;transition:opacity 0.5s;display:flex;flex-direction:column;justify-content:flex-end;padding:28px}
+    .gallery-cell:hover .overlay{opacity:1}
+    .gallery-cell .overlay h4{font-size:24px;color:#fff;font-weight:500;transform:translateY(12px);transition:transform 0.5s var(--transition) 0.1s;text-shadow:0 2px 8px rgba(0,0,0,0.3)}
+    .gallery-cell:hover .overlay h4{transform:translateY(0)}
+    .gallery-cell .overlay p{font-size:12px;color:rgba(255,255,255,0.85);letter-spacing:2px;text-transform:uppercase;transform:translateY(12px);transition:transform 0.5s var(--transition) 0.2s;font-weight:500;margin-top:4px}
+    .gallery-cell:hover .overlay p{transform:translateY(0)}
+    .gallery-cell .overlay .view-btn{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--soft-gold);transform:translateY(12px);transition:transform 0.5s var(--transition) 0.3s;font-weight:600}
+    .gallery-cell:hover .overlay .view-btn{transform:translateY(0)}
+    .gallery-cell .overlay .view-btn i{font-size:11px}
+    .service-row{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:1100px;margin:0 auto}
+    .service-card{text-align:center;padding:52px 36px;background:#fff;border:2px solid var(--light-gray);transition:all 0.5s var(--transition);position:relative;overflow:hidden;border-radius:16px}
+    .service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--soft-gold);transform:scaleX(0);transition:transform 0.5s var(--transition)}
+    .service-card:hover{border-color:var(--soft-gold);transform:translateY(-8px);box-shadow:0 24px 48px rgba(44,40,38,0.1)}
+    .service-card:hover::before{transform:scaleX(1)}
+    .service-card .icon-wrap{width:72px;height:72px;margin:0 auto 24px;display:flex;align-items:center;justify-content:center;border:2px solid var(--light-gray);border-radius:50%;color:var(--soft-gold);font-size:22px;transition:all 0.5s;position:relative;background:var(--warm-white)}
+    .service-card:hover .icon-wrap{border-color:var(--soft-gold);background:var(--soft-gold);color:#fff;transform:rotateY(360deg);box-shadow:0 8px 24px rgba(196,168,130,0.3)}
+    .service-card h3{font-size:26px;margin-bottom:16px;color:var(--charcoal);font-weight:500}
+    .service-card p{color:var(--warm-gray);font-size:15px;line-height:1.8;font-weight:400}
+    .service-card .features{list-style:none;margin-top:24px;padding-top:24px;border-top:2px solid var(--light-gray)}
+    .service-card .features li{font-size:14px;color:var(--warm-gray);padding:7px 0;display:flex;align-items:center;justify-content:center;gap:10px;font-weight:500}
+    .service-card .features li i{color:var(--soft-gold);font-size:10px}
+    #testimonials{background:var(--cream);position:relative}
+    #testimonials::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--soft-gold),transparent)}
+    .testimonial-row{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:1100px;margin:0 auto}
+    .testimonial-card{background:#fff;padding:48px 36px;text-align:center;border:2px solid var(--light-gray);transition:all 0.5s;position:relative;border-radius:16px}
+    .testimonial-card::after{content:'';position:absolute;bottom:-2px;left:50%;transform:translateX(-50%) scaleX(0);width:80px;height:4px;background:var(--soft-gold);transition:transform 0.5s var(--transition);border-radius:2px}
+    .testimonial-card:hover{border-color:var(--soft-gold);box-shadow:0 16px 40px rgba(44,40,38,0.06);transform:translateY(-4px)}
+    .testimonial-card:hover::after{transform:translateX(-50%) scaleX(1)}
+    .testimonial-card .quote-icon{width:56px;height:56px;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;border:2px solid var(--light-gray);border-radius:50%;font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--soft-gold);transition:all 0.4s;font-weight:600;background:var(--warm-white)}
+    .testimonial-card:hover .quote-icon{background:var(--soft-gold);border-color:var(--soft-gold);color:#fff;box-shadow:0 6px 20px rgba(196,168,130,0.3)}
+    .testimonial-card p{color:var(--charcoal);font-size:16px;line-height:1.9;font-style:italic;margin-bottom:24px;font-weight:400}
+    .testimonial-card .stars{color:var(--soft-gold);font-size:13px;margin-bottom:16px;letter-spacing:3px}
+    .testimonial-card h4{font-size:22px;color:var(--charcoal);font-weight:500;margin-bottom:6px}
+    .testimonial-card span{font-size:12px;color:var(--warm-gray);letter-spacing:1.5px;font-weight:500}
+    #terms{background:var(--cream);position:relative}
+    #terms::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--soft-gold),transparent)}
+    .terms-box{max-width:800px;margin:0 auto;background:#fff;border:2px solid var(--light-gray);overflow:hidden;position:relative;box-shadow:0 8px 32px rgba(44,40,38,0.06);border-radius:16px}
+    .terms-box::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--soft-gold);opacity:0;transition:opacity 0.4s}
+    .terms-box:hover::before{opacity:1}
+    .terms-toggle{padding:36px 40px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;transition:background 0.4s;position:relative}
+    .terms-toggle:hover{background:rgba(196,168,130,0.04)}
+    .terms-toggle h3{font-size:28px;color:var(--charcoal);font-weight:500;letter-spacing:1px}
+    .terms-toggle p{font-size:14px;color:var(--warm-gray);margin-top:6px;font-weight:400}
+    .terms-toggle .toggle-icon{width:48px;height:48px;border:2px solid var(--light-gray);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--soft-gold);font-size:16px;transition:all 0.5s var(--transition);background:var(--warm-white)}
+    .terms-toggle:hover .toggle-icon{border-color:var(--soft-gold);background:var(--soft-gold);color:#fff;box-shadow:0 6px 20px rgba(196,168,130,0.3)}
+    .terms-body{max-height:0;overflow:hidden;transition:max-height 0.6s var(--transition),padding 0.4s;padding:0 40px}
+    .terms-body.open{max-height:1000px;padding:0 40px 40px}
+    .term-line{padding:20px 0;border-bottom:2px solid var(--light-gray);color:var(--charcoal);font-size:15px;line-height:1.8;display:flex;gap:16px;align-items:flex-start;transition:all 0.3s;font-weight:400}
+    .term-line:hover{padding-left:12px;color:var(--charcoal);background:rgba(196,168,130,0.03)}
+    .term-line:last-child{border-bottom:none}
+    .term-line .num{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--soft-gold);min-width:36px;font-weight:600}
+    .term-line strong{color:var(--deep-gold);font-weight:600}
+
+    /* ===== CREATIVE CONTACT SECTION ===== */
+    #contact { 
+      position: relative; 
+      background: var(--charcoal);
+      overflow: hidden;
+      padding: 120px 5%;
+    }
+
+    /* Animated background particles */
+    .contact-particles {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .contact-particles .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: rgba(196, 168, 130, 0.3);
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+    }
+    .contact-particles .particle:nth-child(1) { left: 10%; top: 20%; animation-delay: 0s; width: 6px; height: 6px; }
+    .contact-particles .particle:nth-child(2) { left: 20%; top: 60%; animation-delay: 1s; }
+    .contact-particles .particle:nth-child(3) { left: 35%; top: 30%; animation-delay: 2s; width: 8px; height: 8px; }
+    .contact-particles .particle:nth-child(4) { left: 50%; top: 70%; animation-delay: 0.5s; }
+    .contact-particles .particle:nth-child(5) { left: 65%; top: 15%; animation-delay: 1.5s; width: 5px; height: 5px; }
+    .contact-particles .particle:nth-child(6) { left: 75%; top: 55%; animation-delay: 2.5s; }
+    .contact-particles .particle:nth-child(7) { left: 85%; top: 25%; animation-delay: 3s; width: 7px; height: 7px; }
+    .contact-particles .particle:nth-child(8) { left: 90%; top: 80%; animation-delay: 1.2s; }
+
+    /* Decorative orbit rings */
+    .orbit-ring {
+      position: absolute;
+      border: 1px solid rgba(196, 168, 130, 0.08);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .orbit-ring:nth-child(9) { width: 400px; height: 400px; top: -100px; left: -100px; }
+    .orbit-ring:nth-child(10) { width: 600px; height: 600px; bottom: -200px; right: -150px; }
+    .orbit-ring:nth-child(11) { width: 300px; height: 300px; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+    .contact-section-head {
+      text-align: center; 
+      margin-bottom: 80px;
+      position: relative;
+      z-index: 2;
+    }
+    .contact-section-head .label {
+      font-size: 12px; letter-spacing: 5px; text-transform: uppercase;
+      color: var(--soft-gold); margin-bottom: 16px; display: block;
+      font-weight: 600;
+      background: rgba(196, 168, 130, 0.1);
+      padding: 8px 24px;
+      display: inline-block;
+      border: 1px solid rgba(196, 168, 130, 0.3);
+      animation: letterSpacing 4s ease-in-out infinite;
+    }
+    .contact-section-head h2 {
+      font-size: clamp(36px, 5vw, 56px);
+      color: #fff; font-weight: 400;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+    .contact-section-head h2 em {
+      font-style: italic;
+      color: var(--soft-gold);
+      font-weight: 500;
+    }
+    .contact-section-head .deco-line {
+      width: 60px; height: 3px;
+      background: var(--soft-gold);
+      margin: 0 auto 24px;
+      border-radius: 2px;
+    }
+    .contact-section-head p {
+      color: rgba(255,255,255,0.7); font-size: 17px;
+      max-width: 560px; margin: 0 auto; line-height: 1.9;
+      font-weight: 400;
+    }
+
+    /* Contact split layout */
+    .contact-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Left side - Interactive cards */
+    .contact-left {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .contact-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(196, 168, 130, 0.15);
+      padding: 36px;
+      transition: all 0.5s var(--transition);
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      border-radius: 16px;
+    }
+    .contact-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(196,168,130,0.05), transparent);
+      transition: left 0.6s var(--transition);
+    }
+    .contact-card:hover::before {
+      left: 100%;
+    }
+    .contact-card:hover {
+      border-color: rgba(196, 168, 130, 0.4);
+      transform: translateX(8px);
+      background: rgba(255,255,255,0.05);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    .contact-card .card-icon {
+      width: 64px;
+      height: 64px;
+      border: 2px solid rgba(196, 168, 130, 0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--soft-gold);
+      font-size: 22px;
+      margin-bottom: 20px;
+      transition: all 0.5s var(--transition);
+      position: relative;
+      background: rgba(196, 168, 130, 0.05);
+    }
+    .contact-card:hover .card-icon {
+      background: var(--soft-gold);
+      border-color: var(--soft-gold);
+      color: var(--charcoal);
+      transform: rotateY(360deg);
+      box-shadow: 0 8px 24px rgba(196, 168, 130, 0.3);
+    }
+    .contact-card .card-label {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .contact-card .card-value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: color 0.3s;
+    }
+    .contact-card:hover .card-value {
+      color: var(--soft-gold);
+    }
+    .contact-card .card-hint {
+      font-size: 14px;
+      color: rgba(255,255,255,0.5);
+      margin-top: 8px;
+      font-weight: 400;
+    }
+    .contact-card .card-arrow {
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: rgba(196, 168, 130, 0.3);
+      font-size: 18px;
+      transition: all 0.4s;
+    }
+    .contact-card:hover .card-arrow {
+      color: var(--soft-gold);
+      transform: translateY(-50%) translateX(6px);
+    }
+
+    /* Right side - Social constellation */
+    .contact-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .social-constellation {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      pointer-events: none;
+    }
+    .constellation-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 120px;
+      height: 120px;
+      border: 2px solid rgba(196, 168, 130, 0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(196, 168, 130, 0.05);
+      animation: glowPulse 3s ease-in-out infinite;
+    }
+    .constellation-center i {
+      font-size: 36px;
+      color: var(--soft-gold);
+    }
+    .constellation-center span {
+      position: absolute;
+      bottom: -30px;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      white-space: nowrap;
+      font-weight: 600;
+    }
+
+    .orbit-node {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      margin: -30px;
+      border: 2px solid rgba(196, 168, 130, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.7);
+      font-size: 20px;
+      background: var(--charcoal);
+      transition: all 0.4s var(--transition);
+      cursor: pointer;
+      text-decoration: none;
+      animation: borderGlow 3s ease-in-out infinite;
+      pointer-events: auto;
+    }
+    .orbit-node:hover {
+      background: var(--soft-gold);
+      border-color: var(--soft-gold);
+      color: var(--charcoal);
+      transform: scale(1.2);
+      box-shadow: 0 8px 24px rgba(196, 168, 130, 0.4);
+      animation: none;
+    }
+    .orbit-node:nth-child(2) { animation: orbit 20s linear infinite, borderGlow 3s ease-in-out infinite; }
+    .orbit-node:nth-child(3) { animation: orbitReverse 25s linear infinite, borderGlow 3s ease-in-out infinite 0.5s; }
+    .orbit-node:nth-child(4) { animation: orbit 30s linear infinite, borderGlow 3s ease-in-out infinite 1s; }
+    .orbit-node:nth-child(5) { animation: orbitReverse 22s linear infinite, borderGlow 3s ease-in-out infinite 1.5s; }
+
+    /* Availability badge */
+    .availability-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      background: rgba(37, 211, 102, 0.1);
+      border: 1px solid rgba(37, 211, 102, 0.3);
+      border-radius: 50px;
+      margin-top: 40px;
+      transition: all 0.4s;
+      cursor: pointer;
+      text-decoration: none;
+      position: relative;
+      z-index: 10;
+    }
+    .availability-badge:hover {
+      background: rgba(37, 211, 102, 0.2);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.15);
+    }
+    .availability-badge .pulse-dot {
+      width: 10px;
+      height: 10px;
+      background: #25d366;
+      border-radius: 50%;
+      position: relative;
+    }
+    .availability-badge .pulse-dot::after {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border: 2px solid #25d366;
+      border-radius: 50%;
+      animation: ripple 2s ease-out infinite;
+    }
+    .availability-badge span {
+      font-size: 13px;
+      color: rgba(255,255,255,0.8);
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+    .availability-badge strong {
+      color: #25d366;
+      font-weight: 600;
+    }
+
+    /* Map section below */
+    .contact-map-section {
+      margin-top: 80px;
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .map-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+    .map-header h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    .map-header .map-tag {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--soft-gold);
+      border: 1px solid rgba(196, 168, 130, 0.3);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-weight: 600;
+    }
+    .map-wrap {
+      overflow: hidden;
+      border: 1px solid rgba(196, 168, 130, 0.2);
+      position: relative;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      border-radius: 16px;
+    }
+    .map-wrap::after {
+      content: ''; position: absolute; inset: 0;
+      border: 2px solid var(--soft-gold);
+      opacity: 0;
+      transition: opacity 0.4s;
+      pointer-events: none;
+      border-radius: 16px;
+    }
+    .map-wrap:hover::after { opacity: 0.3; }
+    .map-wrap iframe {
+      width: 100%; height: 360px; border: 0;
+      filter: grayscale(0.8) contrast(1.1) sepia(0.15) brightness(0.7);
+      transition: filter 0.6s;
+    }
+    .map-wrap:hover iframe { filter: grayscale(0.4) contrast(1.1) sepia(0.08) brightness(0.8); }
+
+    /* Footer */
+    footer {
+      background: #1a1816; color: rgba(255,255,255,0.6);
+      padding: 80px 5% 40px;
+      position: relative;
+    }
+    footer::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--soft-gold), transparent);
+    }
+    .footer-inner {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 48px; max-width: 1200px; margin: 0 auto 48px;
+    }
+    .footer-brand h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px; color: #fff; font-weight: 500;
+      letter-spacing: 2px; margin-bottom: 16px;
+    }
+    .footer-brand p { font-size: 15px; line-height: 1.9; color: rgba(255,255,255,0.55); }
+    .footer-col h4 {
+      font-size: 12px; letter-spacing: 2.5px; text-transform: uppercase;
+      color: rgba(255,255,255,0.7); margin-bottom: 20px; font-weight: 600;
+    }
+    .footer-col a {
+      display: block; color: rgba(255,255,255,0.5);
+      font-size: 15px; margin-bottom: 12px;
+      transition: all 0.3s;
+      position: relative;
+      padding-left: 0;
+      font-weight: 400;
+    }
+    .footer-col a:hover { color: var(--soft-gold); padding-left: 6px; }
+    .footer-contact p {
+      font-size: 15px; margin-bottom: 10px;
+      display: flex; align-items: center; gap: 10px;
+      color: rgba(255,255,255,0.55);
+    }
+    .footer-contact p i { color: var(--soft-gold); width: 18px; font-size: 13px; }
+    .footer-social {
+      display: flex; gap: 12px; margin-top: 24px;
+    }
+    .footer-social a {
+      width: 44px; height: 44px;
+      border: 2px solid rgba(255,255,255,0.2); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.6); font-size: 15px;
+      transition: all 0.4s;
+    }
+    .footer-social a:hover {
+      background: var(--soft-gold); border-color: var(--soft-gold); color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(196, 168, 130, 0.3);
+    }
+    .footer-base {
+      text-align: center; padding-top: 32px;
+      border-top: 2px solid rgba(255,255,255,0.1);
+      font-size: 13px; letter-spacing: 1.5px;
+      color: rgba(255,255,255,0.4);
+      font-weight: 500;
+    }
+
+    /* WhatsApp */
+    .wa-float {
+      position: fixed; right: 24px; bottom: 24px;
+      width: 60px; height: 60px; background: #25d366;
+      border-radius: 50%; display: flex;
+      align-items: center; justify-content: center;
+      color: #fff; font-size: 26px; z-index: 999;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+      transition: all 0.4s;
+      animation: float 3s ease-in-out infinite;
+    }
+    .wa-float:hover {
+      transform: scale(1.12);
+      box-shadow: 0 12px 32px rgba(37, 211, 102, 0.45);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .about-wrap { grid-template-columns: 1fr; gap: 48px; }
+      .about-img { max-width: 480px; margin: 0 auto; }
+      .contact-split { grid-template-columns: 1fr; gap: 48px; }
+      .social-constellation { width: 300px; height: 300px; }
+      .constellation-center { width: 90px; height: 90px; }
+      .orbit-node { width: 50px; height: 50px; margin: -25px; font-size: 16px; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+      .gallery-cell:nth-child(1),
+      .gallery-cell:nth-child(4) { grid-row: span 1; }
+    }
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .menu-toggle { display: flex; }
+      section { padding: 72px 5%; }
+      .service-row, .testimonial-row { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; gap: 36px; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .hero-buttons { flex-direction: column; align-items: center; }
+      .hero-btn { width: 100%; max-width: 300px; justify-content: center; }
+      .terms-toggle { padding: 28px; }
+      .terms-body.open { padding: 0 28px 28px; }
+      .contact-split { grid-template-columns: 1fr; }
+      .social-constellation { width: 260px; height: 260px; }
+      .orbit-node { width: 44px; height: 44px; margin: -22px; font-size: 14px; }
+      .contact-card { padding: 28px; }
+      .contact-card .card-value { font-size: 20px; }
+      .contact-map-section { margin-top: 60px; }
+      .map-header { flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header id="header">
+  <div class="logo">Iduwara <span>Pallegedara</span></div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#terms">Terms</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="menu-toggle" id="menuToggle">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<div class="mobile-overlay" id="mobileOverlay">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#testimonials" onclick="closeMenu()">Reviews</a>
+  <a href="#terms" onclick="closeMenu()">Terms</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- Trust Bar -->
+<div class="trust-bar">
+  <div class="trust-item"><i class="fas fa-check-circle"></i> 150+ Weddings</div>
+  <div class="trust-item"><i class="fas fa-check-circle"></i> Based in Kandy</div>
+  <div class="trust-item"><i class="fas fa-check-circle"></i> 8+ Years Experience</div>
+  <div class="trust-item"><i class="fas fa-check-circle"></i> All-Island Coverage</div>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg active" style="background-image:url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1920&auto=format&fit=crop')"></div>
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1920&auto=format&fit=crop')"></div>
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1920&auto=format&fit=crop')"></div>
+  <div class="hero-inner">
+    <p class="subtitle">Wedding Photos & Video — Kandy, Sri Lanka</p>
+    <h1>Beautiful Wedding Photos<br><em>& Cinematic Films</em></h1>
+    <p>Professional wedding photography and video services in Kandy, Sri Lanka. We capture your special day so you can relive it forever.</p>
+    <div class="hero-buttons">
+      <a href="#portfolio" class="hero-btn hero-btn-primary">See Our Photos <i class="fas fa-arrow-right"></i></a>
+      <a href="#contact" class="hero-btn hero-btn-secondary">Contact Us <i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+  
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="section-head fade-up">
+    <span class="label">About</span>
+    <h2>The Artist Behind the Lens</h2>
+    <div class="deco-line"></div>
+    <p>Meet the photographer behind the camera.</p>
+  </div>
+  <div class="about-wrap">
+    <div class="about-img fade-up delay-1">
+      <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop" alt="Photographer">
+    </div>
+    <div class="about-text fade-up delay-2">
+      <h3>We Capture Your Wedding Day<br>So You Can <em>Relive It Forever</em></h3>
+      <p>Your wedding day goes by in a blur. Our job is to capture every smile, every tear, and every special moment — so you can look back and remember exactly how it felt.</p>
+      <p>We work quietly in the background, capturing real moments as they happen. No awkward posing, no rushing you around. Just natural, beautiful photos and videos you will treasure forever.</p>
+      <p class="signature">Iduwara Pallegedara</p>
+      <div class="about-stats">
+        <div class="stat-item">
+          <h4>150+</h4>
+          <p>Weddings Captured</p>
+        </div>
+        <div class="stat-item">
+          <h4>8+</h4>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-item">
+          <h4>50+</h4>
+          <p>Happy Couples</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio">
+  <div class="section-head fade-up">
+    <span class="label">Portfolio</span>
+    <h2>Selected Works</h2>
+    <div class="deco-line"></div>
+    <p>See examples of weddings we have photographed across Sri Lanka.</p>
+  </div>
+  <div class="filters fade-up delay-1">
+    <button class="filter-pill active" data-filter="all">All</button>
+    <button class="filter-pill" data-filter="wedding">Weddings</button>
+    <button class="filter-pill" data-filter="preshoot">Pre Shoots</button>
+    <button class="filter-pill" data-filter="cinematic">Cinematic</button>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-cell fade-up" data-cat="wedding">
+      <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1200&auto=format&fit=crop" alt="Wedding">
+      <div class="overlay">
+        <h4>Amanda & Kevin</h4>
+        <p>Wedding — Kandy</p>
+        <span class="view-btn">View Story <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </div>
+    <div class="gallery-cell fade-up delay-1" data-cat="cinematic">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop" alt="Cinematic">
+      <div class="overlay">
+        <h4>Golden Hour Film</h4>
+        <p>Cinematic — Galle</p>
+        <span class="view-btn">View Story <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </div>
+    <div class="gallery-cell fade-up delay-2" data-cat="preshoot">
+      <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=1200&auto=format&fit=crop" alt="Pre Shoot">
+      <div class="overlay">
+        <h4>Sunrise by the Sea</h4>
+        <p>Pre Shoot — Mirissa</p>
+        <span class="view-btn">View Story <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </div>
+    <div class="gallery-cell fade-up" data-cat="wedding">
+      <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?q=80&w=1200&auto=format&fit=crop" alt="Wedding">
+      <div class="overlay">
+        <h4>Nethmi & Pasindu</h4>
+        <p>Wedding — Colombo</p>
+        <span class="view-btn">View Story <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </div>
+    <div class="gallery-cell fade-up delay-1" data-cat="cinematic">
+      <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1200&auto=format&fit=crop" alt="Cinematic">
+      <div class="overlay">
+        <h4>Eternal Vows</h4>
+        <p>Cinematic — Nuwara Eliya</p>
+        <span class="view-btn">View Story <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </div>
+    <div class="gallery-cell fade-up delay-2" data-cat="preshoot">
+      <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1200&auto=format&fit=crop" alt="Pre Shoot">
+      <div class="overlay">
+        <h4>Garden Romance</h4>
+        <p>Pre Shoot — Peradeniya</p>
+        <span class="view-btn">View Story <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <div class="section-head fade-up">
+    <span class="label">Services</span>
+    <h2>What We Offer</h2>
+    <div class="deco-line"></div>
+    <p>Choose the package that fits your wedding day best.</p>
+  </div>
+  <div class="service-row">
+    <div class="service-card fade-up delay-1">
+      <div class="icon-wrap"><i class="fas fa-camera"></i></div>
+      <h3>Wedding Photography</h3>
+      <p>Complete coverage of your wedding day from start to finish. All the big moments and the small ones too.</p>
+      <div style="background:rgba(196,168,130,0.1);border:1px solid rgba(196,168,130,0.2);border-radius:8px;padding:8px 16px;margin:16px 0;text-align:center;">
+        <span style="font-size:12px;color:var(--soft-gold);font-weight:600;letter-spacing:1px;">STARTING FROM LKR 75,000</span>
+      </div>
+      <p style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--soft-gold);margin-bottom:12px;font-weight:600;">What You Get</p>
+      <ul class="features">
+        <li><i class="fas fa-check"></i> Full Day Coverage</li>
+        <li><i class="fas fa-check"></i> 500+ Edited Images</li>
+        <li><i class="fas fa-check"></i> Online Photo Gallery</li>
+        <li><i class="fas fa-check"></i> Printed Wedding Album</li>
+      </ul>
+    </div>
+    <div class="service-card fade-up delay-2">
+      <div class="icon-wrap"><i class="fas fa-film"></i></div>
+      <h3>Cinematic Videography</h3>
+      <p>A professional wedding film that tells the story of your day. Watch it and feel like you are there again.</p>
+      <div style="background:rgba(196,168,130,0.1);border:1px solid rgba(196,168,130,0.2);border-radius:8px;padding:8px 16px;margin:16px 0;text-align:center;">
+        <span style="font-size:12px;color:var(--soft-gold);font-weight:600;letter-spacing:1px;">STARTING FROM LKR 95,000</span>
+      </div>
+      <p style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--soft-gold);margin-bottom:12px;font-weight:600;">What You Get</p>
+      <ul class="features">
+        <li><i class="fas fa-check"></i> 4K Cinematic Film</li>
+        <li><i class="fas fa-check"></i> Drone Video Shots</li>
+        <li><i class="fas fa-check"></i> Same-Day Preview Video</li>
+        <li><i class="fas fa-check"></i> Full Wedding Video</li>
+      </ul>
+    </div>
+    <div class="service-card fade-up delay-3">
+      <div class="icon-wrap"><i class="fas fa-heart"></i></div>
+      <h3>Pre Wedding Shoots</h3>
+      <p>A fun photo session before your wedding at a beautiful location of your choice. Great for save-the-date cards and wedding decor.</p>
+      <div style="background:rgba(196,168,130,0.1);border:1px solid rgba(196,168,130,0.2);border-radius:8px;padding:8px 16px;margin:16px 0;text-align:center;">
+        <span style="font-size:12px;color:var(--soft-gold);font-weight:600;letter-spacing:1px;">STARTING FROM LKR 35,000</span>
+      </div>
+      <p style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--soft-gold);margin-bottom:12px;font-weight:600;">What You Get</p>
+      <ul class="features">
+        <li><i class="fas fa-check"></i> We Help Pick the Location</li>
+        <li><i class="fas fa-check"></i> Change Outfits During Shoot</li>
+        <li><i class="fas fa-check"></i> Posing Guidance Included</li>
+        <li><i class="fas fa-check"></i> Digital Photo Download</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials">
+  <div class="section-head fade-up">
+    <span class="label">Reviews</span>
+    <h2>Words from Couples</h2>
+    <div class="deco-line"></div>
+    <p>Here is what couples say about working with us.</p>
+  </div>
+  <div class="testimonial-row">
+    <div class="testimonial-card fade-up delay-1">
+      <div class="quote-icon">&#10078;</div>
+      <p>The photos are absolutely stunning. Every time we look at them, we feel like we are back at our wedding. Iduwara captured moments we did not even notice happening.</p>
+      <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <h4>Amanda & Kevin</h4>
+      <span>Wedding — Kandy</span>
+    </div>
+    <div class="testimonial-card fade-up delay-2">
+      <div class="quote-icon">&#10078;</div>
+      <p>We barely noticed Iduwara was there, but the video he made is incredible. He caught so many moments we missed. Highly recommend.</p>
+      <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <h4>Nethmi & Pasindu</h4>
+      <span>Cinematic Film — Colombo</span>
+    </div>
+    <div class="testimonial-card fade-up delay-3">
+      <div class="quote-icon">&#10078;</div>
+      <p>The pre-wedding shoot was so much fun. Iduwara made us feel comfortable right away, and the photos came out better than we imagined. Worth every rupee.</p>
+      <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <h4>Sarah & Daniel</h4>
+      <span>Pre Shoot — Mirissa</span>
+    </div>
+  </div>
+</section>
+
+<!-- Terms -->
+<section id="terms">
+  <div class="section-head fade-up">
+    <span class="label">Booking Info</span>
+    <h2>How to Book & Our Rules</h2>
+    <div class="deco-line"></div>
+    <p>Clear and simple booking rules. No surprises.</p>
+  </div>
+  <div class="terms-box fade-up delay-1">
+    <div class="terms-toggle" onclick="toggleTerms()">
+      <div>
+        <h3>Booking Rules</h3>
+        <p>Click here to see our booking terms</p>
+      </div>
+      <div class="toggle-icon" id="termsArrow">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+    <div class="terms-body" id="termsBody">
+      <div class="term-line"><span class="num">01</span>Pay a <strong>LKR 15,000</strong> advance to confirm your date. This amount is not refundable.</div>
+      <div class="term-line"><span class="num">02</span>Your date is only reserved after we receive the advance payment.</div>
+      <div class="term-line"><span class="num">03</span>Pay the remaining balance at least one day before your wedding.</div>
+      <div class="term-line"><span class="num">04</span>Please arrange meals for our team on the wedding day.</div>
+      <div class="term-line"><span class="num">05</span>We may use your photos for our portfolio, but only if you say yes.</div>
+      <div class="term-line"><span class="num">06</span>Your edited photos and video will be ready in about <strong>2 to 4 weeks</strong>.</div>
+      <div class="term-line"><span class="num">07</span>Any changes to your package must be made at least one week before the wedding.</div>
+      <div class="term-line"><span class="num">08</span>Please download your photos and videos within three months of delivery.</div>
+      <div class="term-line"><span class="num">09</span>By paying the advance, you agree to all the terms above.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CREATIVE CONTACT SECTION ===== -->
+<section id="contact">
+  <!-- Floating particles background -->
+  <div class="contact-particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="orbit-ring"></div>
+    <div class="orbit-ring"></div>
+    <div class="orbit-ring"></div>
+  </div>
+
+  <div class="contact-section-head fade-up">
+    <span class="label">Contact</span>
+    <h2>Get In <em>Touch</em></h2>
+    <div class="deco-line"></div>
+    <p>Tell us about your wedding plans. We will get back to you quickly with package details and availability.</p>
+  </div>
+
+  <div class="contact-split">
+    <!-- Left: Interactive Contact Cards -->
+    <div class="contact-left fade-up delay-1">
+      <a href="tel:+94775246833" class="contact-card">
+        <div class="card-icon"><i class="fas fa-phone"></i></div>
+        <div class="card-label">Call Us</div>
+        <div class="card-value">+94 77 524 6833</div>
+        <div class="card-hint">Call us any day, 9 AM to 7 PM</div>
+        <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="mailto:vihagaiduvara63@gmail.com" class="contact-card">
+        <div class="card-icon"><i class="fas fa-envelope"></i></div>
+        <div class="card-label">Write to Us</div>
+        <div class="card-value">vihagaiduvara63@gmail.com</div>
+        <div class="card-hint">We usually reply the same day</div>
+        <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="https://wa.me/94775246833" target="_blank" class="contact-card">
+        <div class="card-icon"><i class="fab fa-whatsapp"></i></div>
+        <div class="card-label">WhatsApp</div>
+        <div class="card-value">+94 77 524 6833</div>
+        <div class="card-hint">Quick replies on WhatsApp</div>
+        <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a>
+      <div class="contact-card" style="cursor:default">
+        <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="card-label">Visit the Studio</div>
+        <div class="card-value">Kandy, Sri Lanka</div>
+        <div class="card-hint">Please call before visiting</div>
+      </div>
+    </div>
+
+    <!-- Right: Social Constellation -->
+    <div class="contact-right fade-up delay-2">
+      <div class="social-constellation">
+        <div class="constellation-center">
+          <i class="fas fa-heart"></i>
+          <span>Connect</span>
+        </div>
+        <a href="https://www.instagram.com/shot_by_vihaga" target="_blank" class="orbit-node" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/share/1BVKgXssWR/" target="_blank" class="orbit-node" title="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.tiktok.com/@iduwaraphotography.lk" target="_blank" class="orbit-node" title="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="mailto:vihagaiduvara63@gmail.com" class="orbit-node" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      <a href="https://wa.me/94775246833?text=Can%20I%20get%20more%20information%20about%20packages" target="_blank" class="availability-badge">
+        <div class="pulse-dot"></div>
+        <span><strong>Click to Book on WhatsApp</strong> — 2026 & 2027 Dates</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Map Section -->
+  <div class="contact-map-section fade-up delay-3">
+    <div class="map-header">
+      <h3>Find Us in Kandy</h3>
+      <span class="map-tag">Central Province, Sri Lanka</span>
+    </div>
+    <div class="map-wrap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d699.6947304532929!2d80.68550844470231!3d7.232730050497885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1773524226443!5m2!1sen!2slk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Iduwara Pallegedara</h3>
+      <p>Wedding photography and videography across Sri Lanka. Also available for destination weddings in other countries.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/shot_by_vihaga" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1BVKgXssWR/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="mailto:vihagaiduvara63@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#services">Wedding Photography</a>
+      <a href="#services">Cinematic Videography</a>
+      <a href="#services">Pre Wedding Shoots</a>
+      <a href="#contact">Destination Weddings</a>
+    </div>
+    <div class="footer-col footer-contact">
+      <h4>Contact</h4>
+      <p><i class="fas fa-envelope"></i> vihagaiduvara63@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +94 77 524 6833</p>
+      <p><i class="fas fa-map-marker-alt"></i> Kandy, Sri Lanka</p>
+    </div>
+  </div>
+  <div class="footer-base">
+    &copy; 2026 Iduwara Pallegedara Photography. All rights reserved.
+  </div>
+</footer>
+
+<!-- WhatsApp -->
+<a class="wa-float" href="https://wa.me/94775246833" target="_blank" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+  // Trust bar
+  const trustBar = document.querySelector('.trust-bar');
+  window.addEventListener('scroll', () => {
+    if (trustBar) {
+      trustBar.classList.toggle('visible', window.scrollY > 300);
+    }
+  });
+
+  // Header scroll
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // Mobile menu
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileOverlay = document.getElementById('mobileOverlay');
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    mobileOverlay.classList.toggle('active');
+    document.body.style.overflow = mobileOverlay.classList.contains('active') ? 'hidden' : '';
+  });
+  function closeMenu() {
+    menuToggle.classList.remove('active');
+    mobileOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Hero slideshow
+  const heroBgs = document.querySelectorAll('.hero-bg');
+  let hi = 0;
+  setInterval(() => {
+    heroBgs[hi].classList.remove('active');
+    hi = (hi + 1) % heroBgs.length;
+    heroBgs[hi].classList.add('active');
+  }, 6000);
+
+  // Scroll reveal
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => { 
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('.fade-up, .section-head').forEach(el => revealObserver.observe(el));
+
+  // Portfolio filter
+  const  filterPills = document.querySelectorAll('.filter-pill');
+  const galleryCells = document.querySelectorAll('.gallery-cell');
+  filterPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      filterPills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      const f = pill.getAttribute('data-filter');
+      galleryCells.forEach(cell => {
+        const cat = cell.getAttribute('data-cat');
+        if (f === 'all' || cat === f) {
+          cell.style.display = 'block';
+          setTimeout(() => cell.style.opacity = '1', 20);
+        } else {
+          cell.style.opacity = '0';
+          setTimeout(() => cell.style.display = 'none', 400);
+        }
+      });
+    });
+  });
+
+  // Terms toggle
+  function toggleTerms() {
+    document.getElementById('termsBody').classList.toggle('open');
+    const arrow = document.getElementById('termsArrow');
+    arrow.style.transform = arrow.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
+  }
+</script>
+
+</body>
+</html>
